@@ -84,6 +84,7 @@ button {
 
 .task {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
     max-width: 350px;
