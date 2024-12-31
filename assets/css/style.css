@@ -1,0 +1,135 @@
+:root {
+    /* COLOR */
+    --bg-primary-color: #d25b2e;
+    --bg-secondary-color: #254e70;
+    --bg-dark-color: #1c1e24;
+    --bg-light-color: #f0f0f0;
+
+    --text-primary-color: #d25b2e;
+    --text-secondary-color: #254e70;
+    --text-dark-color: #1c1e24;
+    --text-light-color: #f0f0f0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-light-color);
+}
+
+.area {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+h1 {
+    font-size: 4rem;
+    color: var(--text-dark-color);
+    margin: 30px 0;
+}
+
+span {
+    color: var(--text-primary-color);
+}
+
+button {
+    cursor: pointer;
+
+}
+
+.tasks {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#tasks {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    flex: 11;
+    border: 1px solid var(--bg-light-color);
+}
+
+#tasks:focus {
+    border: 1px solid var(--bg-primary-color);
+    outline: 0;
+}
+
+.tasks button {
+    flex: 1;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--bg-secondary-color);
+    color: var(--text-light-color);
+    font-size: 3rem;
+    padding: 0 6px;
+    transition: all 0.3s ease;
+}
+
+.tasks button:hover {
+    background-color: var(--bg-primary-color);
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 20px;
+    font-size: 1.6rem;
+}
+
+.left {
+    display: flex;
+    gap: 10px;
+    color: var(--bg-secondary-color);
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    gap: 5px;
+}
+
+.right button {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    color: var(--text-light-color);
+    align-items: center;
+}
+
+.btn-delete,
+.btn-edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.btn-delete {
+    background-color: red;
+}
+
+.btn-edit {
+    background-color: rgb(199, 199, 12);
+    font-size: 1.4rem;
+}
+
+.btn-edit i {
+    margin-left: 2px;
+    color: var(--text-light-color);
+}
