@@ -85,14 +85,18 @@ button {
 .task {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    text-align: start;
     width: 100%;
     max-width: 350px;
     margin: 0 20px;
     font-size: 1.6rem;
 }
 
-.left {
+.task li {
+    list-style: none;
+}
+
+/* .left {
     display: flex;
     gap: 10px;
     color: var(--bg-secondary-color);
@@ -133,4 +137,4 @@ button {
 .btn-edit i {
     margin-left: 2px;
     color: var(--text-light-color);
-}
+} */
