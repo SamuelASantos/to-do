@@ -39,7 +39,7 @@ h1 {
     margin: 30px 0;
 }
 
-span {
+h1 span {
     color: var(--text-primary-color);
 }
 
@@ -94,6 +94,16 @@ button {
 
 .task li {
     list-style: none;
+}
+
+.task li span {
+    margin-left: 10px;
+}
+
+.done {
+    color: var(--text-secondary-color);
+    text-decoration: line-through;
+    opacity: 0.5;
 }
 
 /* .left {
