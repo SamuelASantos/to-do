@@ -106,6 +106,27 @@ button {
     opacity: 0.5;
 }
 
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn button {
+    padding: 10px;
+    width: 150px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--bg-primary-color);
+    color: var(--text-light-color);
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.btn button:hover {
+    background-color: #d14513;
+}
+
 /* .left {
     display: flex;
     gap: 10px;
